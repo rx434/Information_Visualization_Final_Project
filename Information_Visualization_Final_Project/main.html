@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <head>
+        <title>COVID-19 in America</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="//d3js.org/topojson.v1.min.js"></script>
+        <script src="https://d3js.org/d3-geo-projection.v3.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script>
+    </head>
+<div>
+<h1>COVID-19 in America</h1>
+  <select name="Month" id="Month">
+    <option value="Total" selected="selected">Total</option>
+    <option value="Jan">Jan</option>
+    <option value="Feb">Feb</option>
+    <option value="Mar">Mar</option>
+    <option value="Apr">Apr</option>
+    <option value="May">May</option>
+    <option value="Jun">Jun</option>
+    <option value="Jul">Jul</option>
+    <option value="Aug">Aug</option>
+    <option value="Sep">Sep</option>
+    <option value="Oct">Oct</option>
+    <option value="Nov">Nov</option>
+  </select>
+  <input id = "cases" type="button" value="Cases" onclick = "getcase(value)">
+  <input id = "deaths", type="button" value="Deaths" onclick = "getdeath(value)">
+</div>
+<svg width="1000" height="1400"></svg>
+<script src="main.js"></script>
+
+</body>
+</html>
